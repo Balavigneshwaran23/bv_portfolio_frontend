@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* outline: none; */
+    /* overflow:hidden; */
+  }
+
+  html {
+    scroll-behavior: smooth;
+
+  }
+
+
+
+header ul li{
+    @apply px-5 z-10 ;
+}
+
+.mobilnav{
+   @apply fixed top-12 left-0 w-full h-1/6 bg-dimorange  z-10  ;
+}
+
+.mobilnav1{
+    @apply z-10
+}
+
+.mobilnav  li{
+    @apply w-full  h-full text-center border-b-2;
+}
+body {
+    @apply h-screen w-screen bg-gradient-to-b from-gray-900 to-black relative;
+}
+.roundcircle-outer {
+    background:linear-gradient(to bottom, #FF7E00,  rgb(97, 63, 0), rgb(15, 10, 0), rgb(97, 63, 0), rgb(15, 10, 0));
+    z-index: -1;
+    border-radius: 50%;
+    margin-left: 60%;
+    margin-top: 63%;
+    background-size: 200% 100%;
+    width: 60em;
+    height: 60em;
+    box-shadow: -18px 12px 153px 39px rgba(255, 232, 203, 0.7),-18px 12px 153px 110px rgba(255,153,0,0.63);;
+
+    position: relative;
+}
+
+.roundcircle-inter {
+    z-index: -1;
+    background-color: rgb(8, 8, 8);
+    box-shadow: inset 0 0 10px 20px rgba(255, 232, 203, 0.7); 
+    border-radius: 50%;
+    width: 50em;
+    height: 50em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bntover{
+  z-index: 10;
+  position: absolute;
+  top: -20%;
+  left: -5%;
+}
+.bntover2{
+  z-index: 10;
+  position: absolute;
+  top: -25%;
+  left: -15%;
+}
+
+
+.overlay-container {
+    position: relative;
+    top: 0;
+  
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.overlay {
+    position: absolute;
+  
+}
+
+
+
+.line-animation {
+  stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: draw 10s linear infinite;
+  }
+
+.project_details {
+  background:linear-gradient(to bottom,#ff800000, #FF7E00,  rgb(0, 0, 0));
+
+  @apply md:hover:opacity-100 transition-opacity duration-300  ;
+}
+
+
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @media (max-width: 1224px) {
+    .hidden-svg {
+      display: none;
+    }
+  }
+  @media (max-width: 1438px) {
+    .hidden-svg1 {
+      display: none;
+    }
+  }
