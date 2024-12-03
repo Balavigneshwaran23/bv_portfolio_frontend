@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa"; // GitHub icon
 import { HiExternalLink } from "react-icons/hi"; // External Link icon
-import Lexmoon from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-10-04 220744.png";
-import Lexmoon2 from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-10-04 220225.png";
-import Lexmoon3 from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-10-04 220456.png";
-import Lexmoon4 from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-10-04 220804.png";
-import Agathiya from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-11-30 170618.png";
-import Agathiya2 from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-11-30 171252.png";
-import Agathiya3 from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-11-30 171426.png";
-import Agathiya4 from "D:/githubreptasks/bv_portfolio/src/assets/images/Screenshot 2024-11-30 171453.png";
-import Doculang from "D:/githubreptasks/bv_portfolio/src/assets/images/doculang.png";
-import Doculang2 from "D:/githubreptasks/bv_portfolio/src/assets/images/doculang2.png";
-import Doculang3 from "D:/githubreptasks/bv_portfolio/src/assets/images/doculang3.png";
-import Doculang4 from "D:/githubreptasks/bv_portfolio/src/assets/images/doculang4.png";
+import Lexmoon from "../assets/images/Screenshot 2024-10-04 220744.png";
+import Lexmoon2 from "../assets/images/Screenshot 2024-10-04 220225.png";
+import Lexmoon3 from "../assets/images/Screenshot 2024-10-04 220456.png";
+import Lexmoon4 from "../assets/images/Screenshot 2024-10-04 220804.png";
+import Agathiya from "../assets/images/Screenshot 2024-11-30 170618.png";
+import Agathiya2 from "../assets/images/Screenshot 2024-11-30 171252.png";
+import Agathiya3 from "../assets/images/Screenshot 2024-11-30 171426.png";
+import Agathiya4 from "../assets/images/Screenshot 2024-11-30 171453.png";
+import Doculang from "../assets/images/doculang.png";
+import Doculang2 from "../assets/images/doculang2.png";
+import Doculang3 from "../assets/images/doculang3.png";
+import Doculang4 from "../assets/images/doculang4.png";
 export default function Projects() {
   const projects = [
     {

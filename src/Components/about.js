@@ -1,6 +1,6 @@
 
-import bala2 from "D:/githubreptasks/bv_portfolio/src/assets/images/Aboutpic.png";
-import bala_resume from "D:/githubreptasks/bv_portfolio/src/assets/pdf/Balavigneshwaran p_resume.pdf";
+import bala2 from "../assets/images/Aboutpic.png";
+import bala_resume from "../assets/pdf/Balavigneshwaran p_resume.pdf";
 import React, { useState } from "react";
 import {
   LinkIcon,DocumentIcon

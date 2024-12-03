@@ -1,5 +1,5 @@
-import bala from "D:/githubreptasks/bv_portfolio/src/assets/images/hero-removebg.png";
-import { ReactComponent as SvgCurve } from "D:/githubreptasks/bv_portfolio/src/assets/svg/SVG curve.svg";
+import bala from "../assets/images/hero-removebg.png";
+import { ReactComponent as SvgCurve } from "../assets/svg/SVG curve.svg";
 import { useEffect, useRef } from "react";
 import React from 'react';
 import Typed from "typed.js";

@@ -1,4 +1,4 @@
-import bala2 from "D:/githubreptasks/bv_portfolio/src/assets/images/balacontact.png";
+import bala2 from "../assets/images//balacontact.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp,  faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
