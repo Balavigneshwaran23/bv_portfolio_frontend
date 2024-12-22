@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaGithub } from "react-icons/fa"; // GitHub icon
-import { HiExternalLink } from "react-icons/hi"; // External Link icon
+import { FaGithub } from "react-icons/fa"; 
+import { HiExternalLink } from "react-icons/hi"; 
 import Lexmoon from "../assets/images/Screenshot 2024-10-04 220744.png";
 import Lexmoon2 from "../assets/images/Screenshot 2024-10-04 220225.png";
 import Lexmoon3 from "../assets/images/Screenshot 2024-10-04 220456.png";
@@ -25,7 +25,7 @@ export default function Projects() {
     ,{
       title: "Lexmoon AI",
       description: "Lexmoon AI, developed during a stipend-based internship at Lexmoon Private Limited, is a cutting-edge platform for translating legal documents from English to Tamil. Built with HTML, CSS, JavaScript, Node.js, MongoDB, and Python ML (Streamlit), it ensures accuracy and reliability for legal professionals.",
-      src: [Lexmoon, Lexmoon2, Lexmoon3,Lexmoon4], // Array of images
+      src: [Lexmoon, Lexmoon2, Lexmoon3,Lexmoon4],
       github: "https://github.com/BALAVIGNESHWARAN23/lexmoon-iwinten.git",
       link: "https://lexmoon.com",
     }
@@ -42,7 +42,7 @@ export default function Projects() {
   const scrollContainerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [activeProject, setActiveProject] = useState(null); // For modal
+  const [activeProject, setActiveProject] = useState(null); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -145,9 +145,9 @@ export default function Projects() {
       </div>
       {/* Modal for viewing all images */}
       {activeProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-          <div className="bg-white text-black p-4 rounded-lg w-3/4 max-w-3xl">
-            <h3 className="text-xl font-bold font-sportyfont text-orange-500 mb-4"><span className="text-black">&lt;</span>{activeProject.title}<span className="text-black">/&gt;</span></h3>
+        <div className="fixed  inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+          <div className="bg-gradient-to-b border-orange-700 border-2 from-gray-900 to-black text-black p-4 rounded-lg w-3/4 max-w-3xl">
+            <h3 className="text-xl font-bold font-sportyfont  text-orange-500 mb-4"><span className="text-white">&lt;</span>{activeProject.title}<span className="text-white">/&gt;</span></h3>
             <div className="grid grid-cols-2 gap-4">
               {activeProject.src.map((image, index) => (
                 <img

@@ -1,6 +1,7 @@
 import bala2 from "../assets/images//balacontact.png";
+import bala_resume from "../assets/pdf/Balavigneshwaran p_resume.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faWhatsapp,  faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {  faWhatsapp,  faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import React, { useState } from "react";
 
@@ -23,7 +24,7 @@ export default function Contact()  {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://portfolio-backend-pi-one.vercel.app/api/contact", {
+      const response = await fetch("https://portfolio-backend-jet-six.vercel.app/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -76,7 +77,7 @@ export default function Contact()  {
 
 <section id="skills" className="px-8 md:flex py-1 relative">
   {/* Social Media Icons */}
-  <div className="flex sm:items-center sm:text-center md:absolute md:justify-start md:left-20 mt-2 md-mt-0 pt-2 md:pt-0 mb-1 gap-4">
+  <div className="flex sm:items-center justify-center sm:text-center md:absolute md:justify-start md:pl-20 mt-2 md-mt-0 pt-2 md:pt-0 mb-1 gap-4">
     <div className="border-orange-700 border-2 w-10 h-10 rounded-full flex items-center justify-center animate-bounceSmooth transition-transform duration-1000 ease-in-out hover:animate-hoverSpinScale">
       <a href="https://github.com/BALAVIGNESHWARAN23">
         <FontAwesomeIcon
@@ -101,14 +102,7 @@ export default function Contact()  {
         />
       </a>
     </div>
-    <div className="border-orange-700 border-2 w-10 h-10 rounded-full flex items-center justify-center animate-bounceSmooth transition-transform duration-1000 ease-in-out hover:animate-hoverSpinScale">
-      <a href="https://www.instagram.com/p._.balavigneshwaran_232">
-        <FontAwesomeIcon
-          className="text-white hover:text-orange-500 text-2xl transition-transform duration-300"
-          icon={faInstagram}
-        />
-      </a>
-    </div>
+
   </div></section>
   
 </div>
@@ -128,9 +122,9 @@ export default function Contact()  {
   <a href="#about" className="hover:text-orange-600">About</a>
   <a href="#skills" className="hover:text-orange-600">Skills</a>
   <a href="#projects" className="hover:text-orange-600">Projects</a>
-  <a href="https://example.com/your-resume.pdf" className="hover:text-orange-600">Resume</a>
+  <a href= {bala_resume} className="hover:text-orange-600">Resume</a>
   <a href="https://balavignesh2304.carrd.co/" className="hover:text-orange-600">Link</a>
-  <a href="#contact" className="hover:text-orange-600">Contact</a>
+
   
 </div>
 

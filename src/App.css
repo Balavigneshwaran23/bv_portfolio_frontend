@@ -23,7 +23,23 @@ header ul li{
 }
 
 .mobilnav{
-   @apply fixed top-12 left-0 w-full h-1/6 bg-dimorange  z-10  ;
+   @apply fixed justify-center text-center items-center top-12 right-0 w-1/2 h-1/3 bg-dimorange   ;
+   z-index: 60;
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-right {
+  animation: fade-in-right 0.8s ease-out;
 }
 
 .mobilnav1{

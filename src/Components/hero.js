@@ -39,7 +39,7 @@ export default function Hero() {
 
     <div className="relative w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
           <img
-            src={bala} alt="balavigneshwaran" className="w-2/4 md:w-[420px] h-[350px] md:h-[640px] md:mt-9 rounded-lg shadow-lg"/>
+            src={bala} alt="balavigneshwaran" className="w-auto md:w-[420px] h-[350px] md:h-[640px] md:mt-9 rounded-lg shadow-lg"/>
         </div>
       
         <div className="relative z-10 text-center md:right-5 md: mt-10 md:mt-[250px] px-5 md:px-10 ">
@@ -55,9 +55,9 @@ export default function Hero() {
           <a href="#about"><button  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md text-sm font-medium font-displayfont">
           About Me
           </button></a>
-          <button className="border border-orange-500 hover:bg-orange-500 hover:text-white text-orange-500 px-6 py-3 rounded-md text-sm font-medium font-displayfont">
+          <a href="#contact"><button className="border border-orange-500 hover:bg-orange-500 hover:text-white text-orange-500 px-6 py-3 rounded-md text-sm font-medium font-displayfont">
           Get in touch
-          </button>
+          </button></a>
         </div>
       </div>
 

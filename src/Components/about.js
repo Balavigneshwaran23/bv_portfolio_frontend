@@ -2,11 +2,9 @@
 import bala2 from "../assets/images/Aboutpic.png";
 import bala_resume from "../assets/pdf/Balavigneshwaran p_resume.pdf";
 import React, { useState } from "react";
-import {
-  LinkIcon,DocumentIcon
-} from "@heroicons/react/24/outline"; 
+import {LinkIcon,DocumentIcon} from "@heroicons/react/24/outline"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faWhatsapp,  faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {  faWhatsapp,  faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -122,9 +120,7 @@ export default function About (){
 <a href="https://wa.me/919025302745? text=hi ther how can i help you?"><FontAwesomeIcon
   className="text-orange-700 hover:text-orange-500 text-4xl px-2 z-50  transform relative animate-bounceSmooth transition-transform duration-1000 ease-in-out  hover:animate-hoverSpinScale" icon={faWhatsapp} 
 /></a>
-<a href="https://www.instagram.com/p._.balavigneshwaran_232?igsh=aXpkZzl3enRtcTNu/"><FontAwesomeIcon
-  className="text-orange-700 hover:text-orange-500 text-4xl px-2 z-50  transform relative animate-bounceSmooth transition-transform duration-1000 ease-in-out  hover:animate-hoverSpinScale" icon={faInstagram} 
-/></a></div>
+</div>
 
 
 
@@ -137,7 +133,7 @@ export default function About (){
                 
                 <h2 className="text-4xl font-bold mb-4  font-sportyfont">&lt; <span className="text-orange-500">About</span> Me /&gt;</h2>
                 <p className="text-gray-300 leading-relaxed mb-6 font-textfont">
-                Hi! I'm <span className="text-orange-500 " >Balavigneshwaran</span>, a passionate <span className="text-orange-500"> Full Stack Web Developer </span> with expertise in creating <span className="text-orange-500">dynamic </span>and <span className="text-orange-500">responsive web applications</span>. I enjoy solving complex problems and building innovative solutions using modern technologies like <span className="text-orange-500">React</span>, <span className="text-orange-500">Node.js</span>, and <span className="text-orange-500">Tailwind CSS</span>. My goal is to help businesses achieve their digital transformation goals through robust and scalable web solutions. When I'm not coding, you can find me learning <span className="text-orange-500">new tech trends</span> or exploring new challenges in the world of <span className="text-orange-500">software development</span>.
+                Hi! I'm <span className="text-orange-500 " >Balavigneshwaran</span>, a passionate <span className="text-orange-500"> Full Stack Web Developer </span> with expertise in creating <span className="text-orange-500">dynamic </span>and <span className="text-orange-500">responsive web applications</span>. I enjoy solving complex problems and building innovative solutions using modern technologies like <span className="text-orange-500">React</span>, <span className="text-orange-500">Node.js</span>, and <span className="text-orange-500">Tailwind CSS</span>. My goal is to help businesses achieve their digital transformation goals through robust and scalable web solutions. When I'm not coding, you can find me learning <span className="text-orange-500">new tech trends</span> or exploring new challenges in the world of <span className="text-orange-500">Web development</span>.
                 </p>
                 <div>
                 <h3 className="text-3xl font-bold mb-4 font-sportyfont">&lt; My favorite <span className="text-orange-500">tools</span> and <span className="text-orange-500">technologies </span>/&gt;</h3>
