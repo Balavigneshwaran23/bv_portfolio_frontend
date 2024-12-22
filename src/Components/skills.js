@@ -5,7 +5,7 @@ import {
   ServerIcon,
   WrenchScrewdriverIcon,
   UsersIcon,
-} from "@heroicons/react/24/outline"; // Importing Heroicons
+} from "@heroicons/react/24/outline"; 
 
 export default function Skills() {
   const [activeSection, setActiveSection] = useState("Frontend");

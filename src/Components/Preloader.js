@@ -3,7 +3,7 @@ import React from 'react';
 const Preloader = () => {
   return (
     <div className="flex flex-col justify-center mb-0 items-center h-screen bg-gradient-to-b from-gray-900 to-black">
-      {/* SVG Preloader */}
+      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 200 100"
@@ -37,27 +37,12 @@ const Preloader = () => {
         </text>
       </svg>
 
-      {/* Fading Text */}
+      
       <div
-        className=" absolute top-96 text-sm  text-orange-500 mt-0 font-displayfont opacity-0 animate-fade-in-left"
+        className=" md:block preloader absolute top-96 text-sm  text-orange-500 mt-0 font-displayfont opacity-0 animate-fade-in-left"
       >
         BV@Coding | (2024)
       </div>
-      <style>{`
-        @keyframes fade-in-left {
-          0% {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        .animate-fade-in-left {
-          animation: fade-in-left 1.5s ease-in-out forwards;
-        }
-      `}</style>
     </div>
   );
 };

@@ -12,10 +12,10 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading process (e.g., fetching data)
+   
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Adjust the duration as needed
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);

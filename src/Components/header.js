@@ -18,32 +18,14 @@ export default function Header (){
             <li className="flex hover:text-orange-500 duration-300"><PhoneIcon className="h-5 w-5 mr-1 mt-1" /><a href="#contact">Contact</a></li>
         </ul></nav>
       { togglebnt &&  <nav className=' block md:hidden  '>
-        <ul
-  className="flex flex-col font-bold duration-300 mobilnav animate-fade-in-right"
-  onClick={() => settogglebnt(!togglebnt)}
->
-  <li className="flex justify-center items-center hover:text-gray1 duration-300">
-    <HomeIcon className="h-5 w-5 mr-1 mt-1" />
-    <a href="#home">Home</a>
-  </li>
-  <li className="flex justify-center items-center hover:text-gray1 duration-300">
-    <UserIcon className="h-5 w-5 mr-1 mt-1" />
-    <a href="#about">About</a>
-  </li>
-  <li className="flex justify-center items-center hover:text-gray1 duration-300">
-    <LightBulbIcon className="h-5 w-5 mr-1 mt-1" />
-    <a href="#skills">Skills</a>
-  </li>
-  <li className="flex justify-center items-center hover:text-gray1 duration-300">
-    <BriefcaseIcon className="h-5 w-5 mr-1 mt-1" />
-    <a href="#projects">Projects</a>
-  </li>
-  <li className="flex justify-center items-center hover:text-gray1 duration-300">
-    <PhoneIcon className="h-5 w-5 mr-1 mt-1" />
-    <a href="#contact">Contact</a>
-  </li>
-</ul>
-</nav>}
+        <ul className="flex flex-col font-bold duration-300 mobilnav animate-fade-in-right" onClick={() => settogglebnt(!togglebnt)}>
+  <li className="flex justify-center items-center hover:text-gray1 duration-300"><HomeIcon className="h-5 w-5 mr-1 mt-1" /><a href="#home">Home</a></li>
+  <li className="flex justify-center items-center hover:text-gray1 duration-300"><UserIcon className="h-5 w-5 mr-1 mt-1" /><a href="#about">About</a></li>
+  <li className="flex justify-center items-center hover:text-gray1 duration-300"><LightBulbIcon className="h-5 w-5 mr-1 mt-1" /><a href="#skills">Skills</a></li>
+  <li className="flex justify-center items-center hover:text-gray1 duration-300"><BriefcaseIcon className="h-5 w-5 mr-1 mt-1" /><a href="#projects">Projects</a></li>
+  <li className="flex justify-center items-center hover:text-gray1 duration-300"><PhoneIcon className="h-5 w-5 mr-1 mt-1" /><a href="#contact">Contact</a></li>
+  </ul>
+ </nav>}
         <button onClick={()=> settogglebnt(!togglebnt)}><Bars3Icon  className=' fixed right-6 top-4 block md:hidden mobilnav1 text-white h-5 '/></button>
     </header>
 }

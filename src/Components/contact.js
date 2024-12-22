@@ -47,9 +47,6 @@ export default function Contact()  {
 
 
 <div className="relative md:w-1/2  flex flex-col items-center md:flex-row md:items-start md:justify-center space-y-4 md:space-y-0">
-
-
-  {/* Profile Section */}
   <div className="relative">
     <div className="bg-orange-500 absolute  transform -translate-x-1/2 md:translate-x-0 md:left-64 rounded-full sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px]"></div>
     <img
@@ -58,8 +55,6 @@ export default function Contact()  {
       className="relative  md:left-64 h-[105px] w-[105px] sm:h-[80px] sm:w-[80px] md:h-[100px] md:w-[93px] rounded-full z-10 hover:scale-110 transition-transform duration-300 hover:shadow-xl hover:border-orange-700 hover:border-2"
     />
   </div>
-
-  {/* Text Section */}
  <div className="text-center md:relative md:ml-6 md:top-[105px] md:w-1/2 px-5 md:px-0">
   <div className="text-sm text-orange-500 mb-2 font-displayfont">BV@Coding | (2024)</div>
   <h1 className="text-2xl md:text-3xl font-bold leading-tight font-sportyfont">
@@ -67,7 +62,6 @@ export default function Contact()  {
   </h1>
   <div className="relative mt-2">
     <h1 className="whitespace-nowrap w-full pr-5 text-3xl md:text-4xl text-white font-bold">
-      {/* Optional animated text */}
     </h1>
   </div>
   <p className="mt-4 text-gray-300 text-lg font-textfont">
@@ -76,7 +70,6 @@ export default function Contact()  {
 
 
 <section id="skills" className="px-8 md:flex py-1 relative">
-  {/* Social Media Icons */}
   <div className="flex sm:items-center justify-center sm:text-center md:absolute md:justify-start md:pl-20 mt-2 md-mt-0 pt-2 md:pt-0 mb-1 gap-4">
     <div className="border-orange-700 border-2 w-10 h-10 rounded-full flex items-center justify-center animate-bounceSmooth transition-transform duration-1000 ease-in-out hover:animate-hoverSpinScale">
       <a href="https://github.com/BALAVIGNESHWARAN23">
@@ -110,12 +103,6 @@ export default function Contact()  {
 
   
 </div>
-
-
-
-{/* pages name */}
-
-
 <div className=" flex text-lg  text-gray-700 flex-col font-textfont text-center md:relative mb-3 px-5 md:px-0 items-center justify-center -top-20 right-24 mr-10 ml-10">
   <p className="text-orange-500">Pages To Explore</p>
   <a href="#home" className="hover:text-orange-600" >home</a>
@@ -152,28 +139,13 @@ export default function Contact()  {
             className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500"
             required
           />
-           <input
-            type="text"
-            name="subject"
-            placeholder="Your Subject "
-            value={formData.subject}
-            onChange={handleChange}
-            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500"
-            required
+           <input type="text" name="subject" placeholder="Your Subject " value={formData.subject} onChange={handleChange} 
+           className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" required
           />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500"
-            rows="5"
-            required
+          <textarea name="message" placeholder="Your Message" value={formData.message}  onChange={handleChange}
+            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" rows="5" required
           />
-          <button
-            type="submit"
-            className="w-full py-2 border border-orange-500 hover:bg-orange-500 hover:text-white text-orange-500 px-6  rounded-md text-sm font-medium font-displayfontneon-shadow"
-          >
+          <button  type="submit" className="w-full py-2 border border-orange-500 hover:bg-orange-500 hover:text-white text-orange-500 px-6  rounded-md text-sm font-medium font-displayfontneon-shadow" >
             Send Message
           </button>
         </form>
