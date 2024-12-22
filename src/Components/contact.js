@@ -121,30 +121,14 @@ export default function Contact()  {
         &lt; <span className="text-orange-500">For</span> Contact /&gt;
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4 ">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500"
-            required
-          />
+          <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange}
+           className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" required/>
+          <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange}
+           className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" required/>
            <input type="text" name="subject" placeholder="Your Subject " value={formData.subject} onChange={handleChange} 
-           className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" required
-          />
+           className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" required />
           <textarea name="message" placeholder="Your Message" value={formData.message}  onChange={handleChange}
-            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" rows="5" required
-          />
+            className="w-full p-2 rounded bg-transparent border-2 border-white hover:border-orange-500 text-orange-400 focus:outline-none focus:ring focus:ring-orange-500" rows="5" required/>
           <button  type="submit" className="w-full py-2 border border-orange-500 hover:bg-orange-500 hover:text-white text-orange-500 px-6  rounded-md text-sm font-medium font-displayfontneon-shadow" >
             Send Message
           </button>
