@@ -75,8 +75,8 @@ export default function Projects() {
 
   return (
     <div id="projects" className=" w-full bg-gradient-to-b from-black to-gray-900 text-white py-10">
-      <h2 data-aos="fade-up"
-        data-aos-delay="500" data-aos-duration="2000"  className="text-4xl text-center font-bold font-sportyfont text-white mb-6">
+      <h2 data-aos="fade-down-right"
+        data-aos-delay="1" data-aos-duration="2000"   className="text-4xl text-center font-bold font-sportyfont text-white mb-6">
       &lt; <span className="text-orange-500">My</span> Projects /&gt;
       </h2>
       <div  
@@ -88,7 +88,7 @@ export default function Projects() {
         onMouseLeave={() => setIsHovered(false)}
       >
         {projects.map((project, index) => (
-         <div data-aos="flip-up" data-aos-delay={`${500 + index * 100}`} data-aos-duration="2000"
+         <div data-aos="flip-up" data-aos-delay={`${50 + index * 70}`} data-aos-duration="2000"
          key={index}
          className={`relative  min-w-fit sm:w-full lg:min-w-[800px] h-fit  sm:h-[300px] md:h-[380px] sm:py-6 md:py-0 border-orange-700 border-2 mt-6 mb-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer ${
            isSmallScreen ? "bg-gradient-to-b from-gray-800 to-black" : ""

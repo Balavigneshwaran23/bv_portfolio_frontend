@@ -48,7 +48,7 @@ export default function Contact()  {
 
 <div className=" contactabout relative md:w-1/2   flex flex-col items-center md:flex-row md:items-start md:justify-center space-y-4 md:space-y-0">
 <div data-aos="fade-right"
-        data-aos-delay="500" data-aos-duration="2000" className="flex justify-center items-center -mt-20">
+        data-aos-delay="1" data-aos-duration="2000" data-aos-offset="200" className="flex justify-center items-center -mt-20">
 <div className="relative flex flex-col items-center sm:w-auto md:flex-row md:items-start md:space-x-6">
   
   <div className="text-center md:text-left md:relative md:ml-6 md:top-[105px] md:w-1/2 px-5 md:px-0">
@@ -105,7 +105,7 @@ export default function Contact()  {
   
 </div>
 <div data-aos="zoom-in-right"
-        data-aos-delay="500" data-aos-duration="2000" className="minicontact p-6 max-w-md w-full  relative ml-52  border-2 border-orange-700 rounded-lg shadow-lg">
+        data-aos-delay="2" data-aos-duration="2000" className="minicontact p-6 max-w-md w-full  relative ml-52  border-2 border-orange-700 rounded-lg shadow-lg">
         <h1 className="text-4xl  text-center text-white font-sportyfont font-bold neon-text mb-4">
         &lt; <span className="text-orange-500">For</span> Contact /&gt;
         </h1>
@@ -131,7 +131,7 @@ export default function Contact()  {
 
     </div>
     <div  data-aos="fade-up"
-        data-aos-delay="500" data-aos-duration="2000" className=" pagelink  flex text-lg  text-gray-700 flex-col font-textfont text-center md:relative mb-3 px-5 md:px-0 items-center justify-center -top-20 right-24">
+        data-aos-delay="3" data-aos-duration="2000" className=" pagelink  flex text-lg  text-gray-700 flex-col font-textfont text-center md:relative mb-3 px-5 md:px-0 items-center justify-center -top-20 right-24">
   <p className="text-orange-600">Pages To Explore</p>
   <a href="#home" className="hover:text-orange-600" >home</a>
   <a href="#about" className="hover:text-orange-600">About</a>
