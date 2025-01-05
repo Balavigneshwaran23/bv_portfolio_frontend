@@ -75,10 +75,11 @@ export default function Projects() {
 
   return (
     <div id="projects" className=" w-full bg-gradient-to-b from-black to-gray-900 text-white py-10">
-      <h2   className="text-4xl text-center font-bold font-sportyfont text-white mb-6">
+      <h2 data-aos="fade-up"
+        data-aos-delay="500" data-aos-duration="2000"  className="text-4xl text-center font-bold font-sportyfont text-white mb-6">
       &lt; <span className="text-orange-500">My</span> Projects /&gt;
       </h2>
-      <div
+      <div  
         ref={scrollContainerRef}
         className={`flex ${
           isSmallScreen ? "flex-col space-y-6" : "overflow-x-auto space-x-6"
@@ -87,7 +88,7 @@ export default function Projects() {
         onMouseLeave={() => setIsHovered(false)}
       >
         {projects.map((project, index) => (
-         <div
+         <div data-aos="flip-up" data-aos-delay={`${500 + index * 100}`} data-aos-duration="2000"
          key={index}
          className={`relative  min-w-fit sm:w-full lg:min-w-[800px] h-fit  sm:h-[300px] md:h-[380px] sm:py-6 md:py-0 border-orange-700 border-2 mt-6 mb-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer ${
            isSmallScreen ? "bg-gradient-to-b from-gray-800 to-black" : ""
@@ -107,7 +108,7 @@ export default function Projects() {
                : "absolute bottom-0 top-52 left-0 right-0 px-4 md:opacity-0 md:hover:opacity-100 sm:opacity-100 project_details text-white"
            }`}
          >
-           <h3 className="text-lg sm:text-xl mt-2 text-white font-sportyfont">
+           <h3  className="text-lg sm:text-xl mt-2 text-white font-sportyfont">
              &lt; <span className="font-sportyfont text-orange-500">{project.title}</span> /&gt;
            </h3>
            <p className="text-sm font-modernfont mt-2">{project.description}</p>

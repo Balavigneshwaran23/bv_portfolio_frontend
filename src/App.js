@@ -6,6 +6,7 @@ import About from './Components/about';
 import Skills from './Components/skills';
 import Projects from './Components/projects';
 import Contact from './Components/contact';
+import Footer from './Components/footer';
 import './App.css';
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Skills />
           <Projects />
           <Contact />
+          <Footer/>
         </div>
       )}
     </div>

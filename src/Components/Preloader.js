@@ -39,7 +39,7 @@ const Preloader = () => {
 
       
       <div
-        className=" md:block preloader absolute top-96 text-sm  text-orange-500 mt-0 font-displayfont opacity-0 animate-fade-in-left"
+        className=" md:block preloader absolute  text-sm  text-orange-500 mt-0 font-displayfont opacity-0 animate-fade-in-left"
       >
         BV@Coding | (2024)
       </div>
