@@ -7,12 +7,13 @@ export default function Hero() {
   const el = useRef(null);
   const Designer = '<span class="text-orange-500">Designer</span>';
   const Developer = '<span class="text-orange-500">Developer</span>';
+  const Solver  = '<span class="text-orange-500">Solver</span>';
   const Engineer = '<span class="text-orange-500">Engineer</span>';
   const Animator = '<span class="text-orange-500">Animator</span>';
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [ "Full Stack "+ Engineer,"Software "+ Developer, "Web " + Designer,"Interactive "+ Animator ],
+      strings: [ "Full Stack "+ Engineer, "Web "+ Developer, "Web "+ Solver, "Web "+ Designer, "Interactive "+ Animator ],
       typeSpeed: 50,
       loop: true,
       loopCount: Infinity,
