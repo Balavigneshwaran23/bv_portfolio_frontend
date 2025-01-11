@@ -104,8 +104,9 @@ export default function Contact()  {
 
   
 </div>
+<div className="minicontact1">
 <div data-aos="zoom-in-right"
-        data-aos-delay="2" data-aos-duration="2000" className="minicontact p-6 max-w-md w-full  relative ml-52  border-2 border-orange-700 rounded-lg shadow-lg">
+        data-aos-delay="2" data-aos-duration="2000" className="minicontact p-6 max-w-md w-full  relative ml-52  border-2 border-orange-700 rounded-lg shadow-lg ">
         <h1 className="text-4xl  text-center text-white font-sportyfont font-bold neon-text mb-4">
         &lt; <span className="text-orange-500">For</span> Contact /&gt;
         </h1>
@@ -124,7 +125,7 @@ export default function Contact()  {
         </form>
         {status && <p className="text-center text-orange-500 mt-4">{status}</p>}
       </div>
-
+      </div>
 
         
      

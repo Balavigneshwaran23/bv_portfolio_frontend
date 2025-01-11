@@ -189,7 +189,7 @@ body {
   }
 
 }
-@media (max-width: 824px) {
+@media (max-width: 826px) {
   .contactabout {
     display: flex;
     justify-content: center;
@@ -197,7 +197,9 @@ body {
     flex-wrap: wrap;
     margin: 20px auto;
   }
-
+.minicontact1{
+  padding-top: 220px;
+}
   .minicontact {
     display: flex;
     justify-content: center; 
@@ -212,7 +214,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; 
-    margin: 0px auto; 
+    margin: -790px auto; 
+  }
+
+  .footermin{
+    margin-top: 1350px;
   }
 }
 
