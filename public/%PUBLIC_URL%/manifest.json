@@ -1,0 +1,21 @@
+{
+    "name": "BV Portfolio",
+    "short_name": "BV",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0000",
+    "theme_color": "#ff6a00",
+    "icons": [
+      {
+        "src": "./BV__1_-removebg-preview.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "./BV__1_-removebg-preview.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
