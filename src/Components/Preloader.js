@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Preloader = () => {
   return (
     <div className="flex flex-col justify-center mb-0 items-center h-screen bg-gradient-to-b from-gray-900 to-black">
-      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 200 100"
@@ -24,8 +23,8 @@ const Preloader = () => {
           </linearGradient>
         </defs>
         <text
-          x="50%" 
-          y="50%" 
+          x="50%"
+          y="50%"
           textAnchor="middle"
           dominantBaseline="middle"
           fontFamily="sportyfont"
@@ -37,10 +36,7 @@ const Preloader = () => {
         </text>
       </svg>
 
-      
-      <div
-        className=" md:block preloader absolute  text-sm  text-orange-500 mt-0 font-displayfont opacity-0 animate-fade-in-left"
-      >
+      <div className=" md:block preloader absolute  text-sm  text-orange-500 mt-0 font-displayfont opacity-0 animate-fade-in-left">
         BV@Coding | (2024)
       </div>
     </div>
