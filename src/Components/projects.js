@@ -42,7 +42,27 @@ export default function Projects() {
     },
   ];
 
-  const projectData = Array(100).fill(projects).flat();
+  // const projectData = Array(100).fill(projects).flat();
+
+  const useIsLargeScreen = () => {
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
+  
+    useEffect(() => {
+      const handleResize = () => setIsLargeScreen(window.innerWidth > 768);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
+    return isLargeScreen;
+  };
+  
+    const isLargeScreen = useIsLargeScreen();
+    const projectData = isLargeScreen ? Array(100).fill(projects).flat() : (projects);
+
+
+
+
+
 
   const scrollContainerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
